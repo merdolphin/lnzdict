@@ -1,6 +1,7 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2013-09-15T14:38:13
+# Copyright 2013 lina <lina.oahz@gmail.com>
+# writen on Sun Sep 15 23:48:41 SGT 2013
 #
 #-------------------------------------------------
 
