@@ -25,14 +25,15 @@ void MainWindow::on_lineEditInput_returnPressed()
     lookforword = ui->lineEditInput->text();
 
     QProcess myprocess;
-    myprocess.execute("ls");
+    myprocess.execute("sleep 12");
 
     QByteArray output = myprocess.readAllStandardOutput();
 
     QTextStream out(stdout);
     out << "xxx" << myprocess.pid() << endl;
-    out << "lnzdict" << output.length() << endl;
-   // ui->textEditshowMeaning->setText(out);
+    //out <<  myprocess.readAllStandardOutput() << endl;
+    ui->textEditshowMeaning->setText(out.readAll());
+
 }
 
 void MainWindow::on_pushButtonHistory_clicked()
